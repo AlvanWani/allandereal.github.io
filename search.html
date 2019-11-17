@@ -9,7 +9,7 @@
     <title>Search</title>
 </head>
 <body>
-<div id="app" class="h-screen flex flex-col content-between overflow-y-auto">
+<div id="app" class="h-screen w-screen flex flex-col content-between overflow-y-auto">
     <header class="flex justify-between items-center bg-gray-700 py-3 px-5 text-white">
         <div class="w-1/2 flex items-center justify-start">
             <a href="#">
@@ -19,6 +19,7 @@
                     </svg>
                 </span>
             </a>
+
             <a href="index.html">
                 <span class="font-bold text-lg ml-5">ShopLite</span>
             </a>
@@ -40,95 +41,42 @@
             </span>
         </div>
     </header>
-    <main class="flex flex-col h-auto py-4">
-        <div class="bg-white">
-            <div class="pl-5">
-                <h2 class="font-bold text-gray-800">Favourite Stores</h2>
-                <div class="flex flex-no-wrap mt-2 overflow-x-auto pb-4">
-                    <div class="flex-none w-32 h-auto pb-1 object-contain rounded-lg overflow-hidden text-center shadow-lg leading-tight bg-white border">
-                        <img class="w-32 h-24 object-cover" src="images/tuskys.jpeg" alt="tuskys logo">
-                        <h3 class="text-gray-700 font-bold mt-2 px-1">Tuskys</h3>
-                        <p class="text-gray-500 text-xs mt-0 px-1">Ntinda</p>
-                    </div>
-                    <div class="flex-none w-32 h-auto pb-1 ml-4 object-contain rounded-lg overflow-hidden text-center shadow-lg leading-tight bg-white border">
-                        <img class="w-32 h-24 object-cover" src="images/game.gif" alt="tuskys logo">
-                        <h3 class="text-gray-700 font-bold mt-2 px-1">Game</h3>
-                        <p class="text-gray-500 text-xs mt-0 px-1">Lugogo</p>
-                    </div>
-                    <div class="flex-none w-32 h-auto pb-1 ml-4 object-contain rounded-lg overflow-hidden text-center shadow-lg leading-tight bg-white border">
-                        <img class="w-32 h-24 object-cover" src="images/capital.jpeg" alt="tuskys logo">
-                        <h3 class="text-gray-700 font-bold mt-2 leading-tight">Capital Shoppers</h3>
-                        <p class="text-gray-500 text-xs mt-0 px-1">Stretcher</p>
-                    </div>
-                    <div class="flex-none w-32 h-auto pb-1 ml-4 object-contain rounded-lg overflow-hidden text-center shadow-lg leading-tight bg-white border">
-                        <img class="w-32 h-24 object-cover" src="images/shoprite.png" alt="tuskys logo">
-                        <h3 class="text-gray-700 font-bold mt-2 px-1">Shoprite</h3>
-                        <p class="text-gray-500 text-xs mt-0 px-1">Queen's Way</p>
-                    </div>
-                    <div class="flex-none w-32 h-auto pb-1 ml-4 object-contain rounded-lg overflow-hidden text-center shadow-lg leading-tight bg-white border">
-                        <img class="w-32 h-24 object-cover" src="images/garden.jpg" alt="tuskys logo">
-                        <h3 class="text-gray-700 font-bold mt-2 px-1">Garden City Mall</h3>
-                        <p class="text-gray-500 text-xs mt-0 px-1">Jinja Rd.</p>
-                    </div>
+    <main class="flex flex-col h-screen w-screen py-4 bg-white">
+        <div class="mt-4 mx-5">
+            <h3 class="text-lg text-gray-900">Advanced Search</h3>
+            <p class="text-gray-600 text-sm italic leading-tight">
+                Use this refined search to easily find what you are looking for in your preferred location.
+            </p>
+            <div class="flex flex-col mt-5 w-full">
+                <div class="m-4 ml-0">
+                    <label class="block">Item</label>
+                    <input class="py-2 px-3 w-full text-sm border border-gray-600 rounded-lg" type="text" placeholder="what would you like to search for?">
                 </div>
-            </div>
-            <hr class="border-gray-200 text-lg w-full mt-3 border-b-8">
-        </div>
-        <div class="bg-white mt-2 pt-2">
-            <div class="pl-5 pb-2">
-                <h2 class="font-bold text-gray-800">Frequently bought Items</h2>
-                <div class="flex flex-no-wrap mt-1 overflow-x-auto pb-2">
-                    <div class="flex-none w-32 h-auto pb-1 object-contain overflow-hidden text-left leading-tight">
-                        <img class="w-32 h-24 object-cover border rounded-lg" src="images/kakira.jpeg" alt="tuskys logo">
-                        <div>
-                            <h3 class="text-gray-700 font-bold mt-2 px-1">1Kg Sugar</h3>
-                            <p class="text-gray-500 text-xs mt-0 px-1">8000 UGx.</p>
-                        </div>
-                    </div>
-                    <div class="flex-none w-32 h-auto pb-1 ml-4 object-contain overflow-hidden text-left leading-tight">
-                        <img class="w-32 h-24 object-cover border rounded-lg" src="images/jesa.jpeg" alt="tuskys logo">
-                        <h3 class="text-gray-700 font-bold mt-2 px-1">1Ltr. Milk</h3>
-                        <p class="text-gray-500 text-xs mt-0 px-1">4500 UGx.</p>
-                    </div>
-                    <div class="flex-none w-32 h-auto pb-1 ml-4 object-contain overflow-hidden text-left leading-tight">
-                        <img class="w-32 h-24 object-cover border rounded-lg" src="images/jesa.jpeg" alt="tuskys logo">
-                        <h3 class="text-gray-700 font-bold mt-2 px-1">1Ltr. Milk</h3>
-                        <p class="text-gray-500 text-xs mt-0 px-1">4500 UGx.</p>
-                    </div>
-                    <div class="flex-none w-32 h-auto pb-1 ml-4 object-contain overflow-hidden text-left leading-tight">
-                        <img class="w-32 h-24 object-cover border rounded-lg" src="images/jesa.jpeg" alt="tuskys logo">
-                        <h3 class="text-gray-700 font-bold mt-2 px-1">1Ltr. Milk</h3>
-                        <p class="text-gray-500 text-xs mt-0 px-1">4500 UGx.</p>
-                    </div>
+                <div class="m-4 ml-0">
+                    <label class="block">Store Location</label>
+                    <select class="py-2 px-3 w-full text-sm text-gray-700 border border-gray-600 rounded-lg bg-gray-200">
+                        <option>Choose store to search from</option>
+                        <option>Tusys</option>
+                        <option>Game</option>
+                        <option>Capital Shoppers</option>
+                        <option>Shoprite</option>
+                    </select>
                 </div>
-            </div>
-            <hr class="border-gray-200 text-lg w-full mt-5 border-b-8">
-        </div>
-        <div class="bg-white mt-2 pt-2">
-            <div class="px-5">
-                <h2 class="font-bold text-gray-800">Frequently bought Items</h2>
-                <div class="flex flex-wrap mt-2 p-1 rounded-lg bg-gray-200">
-                    <div class="p-1">
-                        <div class="bg-white rounded-full px-3 text-sm py-1 w-auto text-gray-700 border ">Household Essentials</div>
-                    </div>
-                    <div class="p-1">
-                        <div class="bg-white rounded-full px-3 text-sm py-1 w-auto text-gray-700 border">Glossaries</div>
-                    </div>
-                    <div class="p-1">
-                        <div class="bg-white rounded-full px-3 text-sm py-1 w-auto text-gray-700 border">Toiletries</div>
-                    </div>
-                    <div class="p-1">
-                        <div class="bg-white rounded-full px-3 text-sm py-1 w-auto text-gray-700 border">Kitchen</div>
-                    </div>
-                    <div class="p-1">
-                        <div class="bg-white rounded-full px-3 text-sm py-1 w-auto text-gray-700 border">Washing</div>
-                    </div>
-                    <div class="p-1">
-                        <div class="bg-white rounded-full px-3 text-sm py-1 w-auto text-gray-700 border">Food</div>
-                    </div>
-                    <div class="p-1">
-                        <div class="bg-white rounded-full px-3 text-sm py-1 w-auto text-gray-700 border">All Bathroom Essentials</div>
-                    </div>
+                <div class="m-4 ml-0">
+                    <label class="block">Store Location</label>
+                    <select class="py-2 px-3 w-full text-sm text-gray-700 border border-gray-600 rounded-lg bg-gray-200">
+                        <option>Use my current Location</option>
+                        <option>Ntinda</option>
+                        <option>Nakawa</option>
+                        <option>Lugogo</option>
+                    </select>
+                </div>
+                <button class="flex justify-center items-center my-4 ">
+                    <span class="bg-gray-300 text-gray-600 font-semibold text-lg px-4 py-2 rounded-full">+</span>
+                    <span class="font-semibold text-gray-600 ml-4">Add Option</span>
+                </button>
+                <div class="m-4 text-center">
+                    <button class="py-2 px-20 bg-blue-700 text-white bottom-0 left-auto mr-10">SEARCH</button>
                 </div>
             </div>
         </div>
