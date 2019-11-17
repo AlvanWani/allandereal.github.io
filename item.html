@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/tailwind.min.css" rel="stylesheet">
+    <title>Item Page</title>
+</head>
+<body>
+<div id="app" class="h-screen flex flex-col content-between overflow-y-auto">
+    <header class="flex justify-between items-center bg-gray-700 py-2 px-5 text-white">
+        <div class="w-1/2 flex items-center justify-start">
+            <a href="#">
+                <span>
+                    <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </span>
+            </a>
+
+            <a href="index.html">
+                <span class="font-bold text-lg ml-5">ShopLite</span>
+            </a>
+        </div>
+        <div class="flex justify-end">
+            <span>
+                <a href="search.html">
+                    <svg class="fill-current pointer-events-none text-gray-300 w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path>
+                    </svg>
+                </a>
+            </span>
+            <span>
+                <a href="#">
+                    <svg class="fill-current pointer-events-none text-gray-300 w-4 h-4 ml-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path d="M17 16a3 3 0 1 1-2.83 2H9.83a3 3 0 1 1-5.62-.1A3 3 0 0 1 5 12V4H3a1 1 0 1 1 0-2h3a1 1 0 0 1 1 1v1h14a1 1 0 0 1 .9 1.45l-4 8a1 1 0 0 1-.9.55H5a1 1 0 0 0 0 2h12zM7 12h9.38l3-6H7v6zm0 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </header>
+    <main class="flex flex-col h-full py-4 bg-white relative">
+        <div class="border rounded-lg relative h-64 pb-5 mx-5 overflow-hidden border">
+            <div class="object-contain">
+                <img class="object-cover h-64 w-screen" src="images/jesa.jpeg" alt="jesa">
+            </div>
+            <div class="absolute bottom-0 left-auto ml-40 pl-3 text-4xl font-bold text-gray-100">
+                &bull; &bull; &bull;
+            </div>
+        </div>
+        <div class="mt-5 mx-5">
+            <h3 class="text-xl">
+                Jesa Milk - <b>1</b> Ltr.
+            </h3>
+            <div class="flex justify-between items-center">
+                <div class="font-bold text-xl">
+                    2000
+                    <span class="font-light text-lg">Ugx.</span>
+                </div>
+                <div class="text-gray-600">from</div>
+                <div>
+                    <span class="border-b-2 rounded-full p-2 border-gray-600">
+                        <span class="font-bold text-lg">Tuskys</span>
+                        <span class="text-sm text-gray-600 ml-2">Ntinda</span>
+                    </span>
+                    <button class="text-white bg-blue-600 rounded-full px-2 py-1 ml-2">change</button>
+                </div>
+            </div>
+            <div class="mt-10">
+                <h2 class="font-bold text-lg text-gray-900">Quantity</h2>
+                <div class="flex justify-between items-center mt-3">
+                    <div class="px-6 bg-gray-400 text-3xl text-gray-600 rounded-full">-</div>
+                    <div>
+                        <span class="font-bold text-xl text-gray-800">3</span>
+                        <span class="font-hairline text-gray-500 ml-1">Units</span>
+                    </div>
+                    <div class="px-6 bg-gray-400 text-3xl text-gray-600 rounded-full">+</div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between items-center absolute bottom-0 px-5 py-3 border-t border-gray-600 w-screen">
+            <button>ADD TO CART</button>
+            <button class="bg-blue-600 rounded-full px-4 py-2 text-white">BUY NOW</button>
+        </div>
+    </main>
+</div>
+</body>
+</html>
